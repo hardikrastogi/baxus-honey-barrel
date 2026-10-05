@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "The Honey Barrel Extension",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "description": "The Honey Barrel Extension",
+  "icons": {
+    "16": "public/logo.png"
+  },
+  "host_permissions": ["https://services.baxus.co/*"],
+  "permissions": ["activeTab", "scripting", "tabs", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.unicornauctions.com/*"],
+      "js": ["content-scripts/unicorn.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.reservebar.com/*"],
+      "js": ["content-scripts/reserve.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.sothebys.com/*"],
+      "js": ["content-scripts/sothebys.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["*://*.wine-searcher.com/*"],
+      "js": ["content-scripts/wine.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
