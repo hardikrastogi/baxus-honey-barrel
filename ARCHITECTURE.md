@@ -20,7 +20,7 @@
 1. **Do not run `npm install`, `npm run dev`, or `npm run build`** until the file is cleaned. When this analysis was done there was no `node_modules/` folder, so it looks like nothing has been run yet.
 2. Replace `tailwind.config.js` with the clean config shown in §9.1, or delete everything after the final `};`.
 3. If you think it already ran (on this machine or another one, or through an editor extension), treat the machine as compromised: rotate saved browser passwords, session tokens, and SSH/API keys, and move any crypto wallets to fresh keys.
-4. Be careful about where this repository came from (the README points to `github.com/mayank-dev07/baxus`).
+4. Be careful about where this repository came from.
 
 None of the other files contain hidden or obfuscated code. All `package-lock.json` entries resolve to `registry.npmjs.org`.
 

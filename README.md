@@ -7,7 +7,7 @@
 
 A Chrome extension that scrapes whisky/wine bottle information from e-commerce and retail websites, then cross-references with the BAXUS marketplace to determine if the same bottles are available at better prices.
 
-> Based on the original extension by [mayank-dev07](https://github.com/mayank-dev07/baxus). This version removes an obfuscated backdoor that was hidden in `tailwind.config.js` and fixes 10 bugs. See [ARCHITECTURE.md](ARCHITECTURE.md) for the architecture, the security write-up, and the list of fixes.
+> See [ARCHITECTURE.md](ARCHITECTURE.md) for the architecture, the security write-up, and the list of fixes.
 
 ## Installation
 
